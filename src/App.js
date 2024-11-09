@@ -9,7 +9,7 @@ const App = () => {
   const [currentChat, setCurrentChat] = useState(CHATS);
 
   function handleFilter(filter) {
-    if (filter.left === 0) {
+    if (filter.length === 0) {
       setCurrentChat(CHATS);
     }
 
